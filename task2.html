@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<form   action="connect2.php" method="post">
+<center>
+<p>
+ <input type="submit" class="btn btn-primary" value="forward" name="forward"><p>
+</form>
+
+<p>
+ <input type="submit" class="btn btn-primary" value="left" name="left1">
+
+ <input type="submit" class="btn btn-primary" value="stop" name="stop1">
+
+
+
+
+
+ <input type="submit" class="btn btn-primary" value="right" name="right1"><p>
+
+
+<p>
+ <input type="submit" class="btn btn-primary" value="backward" name="backward"><p>
+
+<body>
+
+
+
+<script>
+  window.watsonAssistantChatOptions = {
+      integrationID: "eb27e5b0-e4e3-44df-a41e-f2ec1ee9896d", // The ID of this integration.
+      region: "eu-gb", // The region your integration is hosted in.
+      serviceInstanceID: "32ca9a8a-d411-43d3-864a-bb20ea38c229", // The ID of your service instance.
+      onLoad: function(instance) { instance.render(); }
+    };
+  setTimeout(function(){
+    const t=document.createElement('script');
+    t.src="https://web-chat.global.assistant.watson.appdomain.cloud/loadWatsonAssistantChat.js";
+    document.head.appendChild(t);
+  });
+</script>
+
+
+</body>
+
+</center>
+
+
+
+
+
+
+
+
+
+
+</html>
